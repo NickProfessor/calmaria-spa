@@ -1,35 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "./abstract/root";
 
-header {
-  background: linear-gradient(180deg, #e8f5c8 0%, #ffffff 96.87%);
-  padding: 2em;
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.6rem;
-    .linha {
-      border-top: 1px solid black;
-      width: 80%;
-      text-align: center;
-    }
-    ul {
-      display: flex;
-      gap: 2rem;
-      li {
-        list-style: none;
-      }
-      a {
-        text-decoration: none;
-        color: #0c0421;
-        font-weight: 500;
-        font-family: "Montserrat", sans-serif;
-        font-size: 22px;
-      }
-    }
-  }
-}
+@use "./components/header";
+@use "./components/nosso-espaco";
