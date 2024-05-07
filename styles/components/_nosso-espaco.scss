@@ -5,18 +5,16 @@
   max-width: 1040px;
   @include mixins.margin-center(80%);
   .detalhes {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 40px 0;
+    justify-content: space-around;
+    gap: 3em;
+    padding: 2em 0;
     .imgs-espaco {
-      max-width: 458px;
-      img {
-        width: 100%;
-      }
+      max-width: 500px;
     }
     .espaco-textos {
-      max-width: 522px;
+      @extend .imgs-espaco;
       .titulo {
         @include mixins.ff-fs-cl(
           variaveis.$ft-titulos,
@@ -32,6 +30,12 @@
         );
         margin-bottom: 16px;
       }
+      .separador {
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      flex-direction: row-reverse;
     }
   }
 }

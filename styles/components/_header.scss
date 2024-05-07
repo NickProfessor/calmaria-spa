@@ -28,6 +28,10 @@ header {
           variaveis.$cor-primaria
         );
         font-weight: 500;
+        &:hover {
+          font-weight: 700;
+          transition: all 600ms;
+        }
       }
     }
   }
@@ -52,7 +56,7 @@ header {
       }
       .btn-main {
         width: 280px;
-        background-color: variaveis.$cor-secundaria;
+        background-color: variaveis.$cor-terciaria;
         font-family: variaveis.$ft-textos;
         color: #fff;
         border: none;
@@ -60,6 +64,11 @@ header {
         padding: 24px;
         font-size: 22px;
         font-weight: 600;
+        &:hover {
+          background-color: variaveis.$cor-secundaria;
+          cursor: pointer;
+          transition: all 500ms;
+        }
       }
     }
     .img-home {
